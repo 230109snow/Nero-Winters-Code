@@ -1,0 +1,2 @@
+My name is Nero, I am a aspiring fantasy author. 
+This is the first time I have ever used Git.
