@@ -1,2 +1,3 @@
 My name is Nero, I am a aspiring fantasy author. 
 This is the first time I have ever used Git.
+Some of my hobbies include reading, writing, D&D, and video games. 
