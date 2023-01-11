@@ -19,7 +19,8 @@ function Reset() {
 
 //Test area
 
-
+5 % 3 //<--- IMPORTANT 
+//also look for the remainder, 9 / 3 will have no remainder and so on and so on
 //end of test area
 
 
@@ -28,7 +29,13 @@ function fizzball() {
     let fbInputElem = document.getElementById("fb-input").value;
     console.log(document.getElementById("fb-input").value);
     let fbOutput = document.getElementById("fb-output");
-    fbOutput.innerText = Boolean(fbInputElem == 3);
-    
-    
-}
+    if (fbInputElem % 3 == 0 ) {
+    fbOutput.innerText = console.log("Fizz");
+    }
+    if (fbInputElem % 5 == 0) {
+        fbOutput.innerText = console.log("Buzz");
+    }
+    if (fbInputElem % 15 == 0) {
+        fbOutput.innerText = console.log("Fizzbuzz");
+    }
+    }
