@@ -30,12 +30,15 @@ function fizzball() {
     console.log(document.getElementById("fb-input").value);
     let fbOutput = document.getElementById("fb-output");
     if (fbInputElem % 3 == 0 ) {
-    fbOutput.innerText = console.log("Fizz");
+    fbOutput.innerText = "Fizz";
     }
     if (fbInputElem % 5 == 0) {
-        fbOutput.innerText = console.log("Buzz");
+        fbOutput.innerText = "Buzz";
     }
     if (fbInputElem % 15 == 0) {
-        fbOutput.innerText = console.log("Fizzbuzz");
+        fbOutput.innerText = "Fizzbuzz";
     }
-    }
+    else if (fbInputElem % 3 != 0 && fbInputElem % 5 != 0 && fbInputElem % 15 != 0 )
+        fbOutput.innerText = fbInputElem;
+
+ }
