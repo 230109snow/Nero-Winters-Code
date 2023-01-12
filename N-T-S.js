@@ -47,18 +47,40 @@ function fizzball() {
  }
  //Try giving + and - a seperate function perhaps?
  function calculator () {
-    if (document.querySelector("cpc")) {
+    if (document.querySelector(".cpc")) {
         document.getElementById("cal-output").innerHTML = 
         parseInt(document.getElementById("cal-output").innerHTML)
         + parseInt(Variable);
     }
-    else if (document.getElementById("c-"))
+    else if (document.querySelector(".spc"))
         document.getElementById("cal-output").innerHTML = 
         parseInt(document.getElementById("cal-output").innerHTML)
         - parseInt(Variable);
  }
- function reset(input) {
+ function clear(input) {
     document.getElementById("cal-output").innerHTML = "";
  }
- 
- 
+const imgTag = document.createElement('img')
+function testfetch() {
+
+fetch('https://api.thecatapi.com/v1/images/search').then((res) => 
+res.json()).then
+((data) => {
+   
+    for(let i = 0; i < data.length; i++) {
+       
+        imgTag.src = data[i].url;
+        imgTag.width = 400;
+        imgTag.height = 300;
+        document.getElementById("img-test").appendChild(imgTag);
+    }
+    })
+}
+function awayWithTheCat() {
+    document.getElementById("img-test").removeChild(imgTag);
+    }
+    
+
+
+
+// https://random-word-api.herokuapp.com/home
