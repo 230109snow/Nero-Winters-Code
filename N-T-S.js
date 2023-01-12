@@ -45,6 +45,7 @@ function fizzball() {
         document.getElementById("cal-output").innerHTML + input;
         
  }
+ //Try giving + and - a seperate function perhaps?
  function calculator () {
     if (document.querySelector("cpc")) {
         document.getElementById("cal-output").innerHTML = 
