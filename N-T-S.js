@@ -14,17 +14,12 @@ function Reset() {
 }
 
 
-
-
-
 //Test area
 
-5 % 3 //<--- IMPORTANT 
-//also look for the remainder, 9 / 3 will have no remainder and so on and so on
+
 //end of test area
 
-
-
+//fix code below
 function fizzball() {
     let fbInputElem = document.getElementById("fb-input").value;
     console.log(document.getElementById("fb-input").value);
@@ -42,3 +37,27 @@ function fizzball() {
         fbOutput.innerText = fbInputElem;
 
  }
+  let firstNum = 0;
+  let secondNum = 1;
+ function Operation(input) {
+        Variable = input;
+        document.getElementById("cal-output").innerHTML = 
+        document.getElementById("cal-output").innerHTML + input;
+        
+ }
+ function calculator () {
+    if (document.querySelector("cpc")) {
+        document.getElementById("cal-output").innerHTML = 
+        parseInt(document.getElementById("cal-output").innerHTML)
+        + parseInt(Variable);
+    }
+    else if (document.getElementById("c-"))
+        document.getElementById("cal-output").innerHTML = 
+        parseInt(document.getElementById("cal-output").innerHTML)
+        - parseInt(Variable);
+ }
+ function reset(input) {
+    document.getElementById("cal-output").innerHTML = "";
+ }
+ 
+ 
