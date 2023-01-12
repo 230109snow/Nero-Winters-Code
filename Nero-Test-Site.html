@@ -27,19 +27,35 @@
     background-color: white;
     color: #ffffff;
     padding: 10px 20;
-    font-size: 10px;
     cursor: pointer;
-    width: 100px;
+    width: 220px;
+    height: 300px;
   }
   .Calk {
     background-color: black;
     border-color: red;
+    border-radius: 12px;
     color: white;
+    font-size: 40px;
   }
   .CR {
     border: 2px red;
     background-color: blue;
     text-align: center;
+  }
+  .spc {
+    background-color: black;
+    border-color: red;
+    border-radius: 12px;
+    color: white;
+    font-size: 50px;
+  }
+  .cpc {
+    background-color: black;
+    border-color: red;
+    border-radius: 12px;
+    color: white;
+    font-size: 50px;
   }
 </style>
 </head><body>
@@ -67,49 +83,49 @@
 <div class=" Calc Calk">
   <div class="CR" Id="cal-output"></div>
   
-<button onclick="Operation('C')" class ="Calk" id="cC">
-C
-</button>
-<button onclick="Operation(9)" class ="Calk" id="c9">
+<button onclick="Operation(9)" class ="Calk" Id="c9">
 9
 </button>
-<button onclick="Operation(8)" class ="Calk" id="c8">
+<button onclick="Operation(8)" class ="Calk" Id="c8">
 8
 </button>
-<button onclick="Operation(7)" class ="Calk" id="c7">
+<button onclick="Operation(7)" class ="Calk" Id="c7">
 7
 </button>
-<button onclick="Operation('+')" class ="Calk" id="c+">
+<button onclick="Operation('+')" class ="cpc" Id="c+">
   +
 </button>
 <br>
-<button onclick="Operation(6)" class ="Calk" id="c6">
+<button onclick="Operation(6)" class ="Calk" Id="c6">
 6
 </button>
-<button onclick="Operation(5)" class ="Calk" id="c5">
+<button onclick="Operation(5)" class ="Calk" Id="c5">
 5
 </button>
-<button onclick="Operation(4)" class ="Calk" id="c4">
+<button onclick="Operation(4)" class ="Calk" Id="c4">
 4
 </button>
-<button onclick="Operation('-')" class ="Calk" id="c-">
+<button onclick="Operation('-')" class ="spc" Id="c-">
   -
   </button>
 <br>
-<button onclick="Operation(3)" class ="Calk" id="c3">
+<button onclick="Operation(3)" class ="Calk" Id="c3">
 3
 </button>
-<button onclick="Operation(2)" class ="Calk" id="c2">
+<button onclick="Operation(2)" class ="Calk" Id="c2">
 2
 </button>
-<button onclick="Operation(1)" class ="Calk" id="c1">
+<button onclick="Operation(1)" class ="Calk" Id="c1">
 1
 </button>
 <br>
-<button onclick="Operation(0)" class ="Calk" id="c0">
+<button onclick="reset('C')" class ="Calk" Id="cC">
+C
+</button>
+<button onclick="Operation(0)" class ="Calk" Id="c0">
 0 
 </button>
-<button onclick="calculator('result')" class ="Calk" id="cE">
+<button onclick="calculator()" class ="Calk" Id="cE">
 Enter
 </button>
 </div>
