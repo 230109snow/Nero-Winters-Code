@@ -22,13 +22,13 @@
     background-color: #ffffff;
   }
   .Calc {
-    align-self: center;
+    position: relative;
     border: 2px black;
     background-color: white;
     color: #ffffff;
-    padding: 10px 20;
+    padding: 20px;
     cursor: pointer;
-    width: 220px;
+    width: 260px;
     height: 300px;
   }
   .Calk {
@@ -36,11 +36,12 @@
     border-color: red;
     border-radius: 12px;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+    position: center;
   }
   .CR {
     border: 2px red;
-    background-color: blue;
+    background-color: gray;
     text-align: center;
   }
   .spc {
@@ -48,14 +49,14 @@
     border-color: red;
     border-radius: 12px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
   }
   .cpc {
     background-color: black;
     border-color: red;
     border-radius: 12px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
   }
 </style>
 </head><body>
@@ -63,7 +64,7 @@
     <A href="index.html"><h2> Counter </h2> </A>
     <div Id="Counter">0</div>
     <button class ="button" onclick="Increase()">Add</button>
-    <button onclick="Subtract()">subtract</button>
+    <button onclick="Subtract1()">subtract</button>
     <button onclick="Reset()">Reset</button>
     </div>
 
@@ -92,8 +93,11 @@
 <button onclick="Operation(7)" class ="Calk" Id="c7">
 7
 </button>
-<button onclick="Plus('+')" class ="cpc" Id="c+">
+<button onclick="Plus('+')" class ="Calk" Id="c+">
   +
+</button>
+<button onclick="Subtrish('-')" class ="Calk" Id="c-">
+  -
 </button>
 <br>
 <button onclick="Operation(6)" class ="Calk" Id="c6">
@@ -105,9 +109,12 @@
 <button onclick="Operation(4)" class ="Calk" Id="c4">
 4
 </button>
-<button onclick="Subtrish('-')" class ="spc" Id="c-">
-  -
-  </button>
+<button onclick="Multiplex('x')" class ="Calk" Id="cX">
+  x
+</button>
+<button onclick="Divish('/')" class ="Calk" Id="c/">
+  /
+</button>
 <br>
 <button onclick="Operation(3)" class ="Calk" Id="c3">
 3
@@ -117,6 +124,9 @@
 </button>
 <button onclick="Operation(1)" class ="Calk" Id="c1">
 1
+</button>
+<button onclick="DEL()" class ="Calk" Id="DEL">
+  Del
 </button>
 <br>
 <button onclick="reset()" class ="Calk" Id="cC">

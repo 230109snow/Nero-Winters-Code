@@ -3,7 +3,7 @@ function Increase() {
     const CounterElem = document.getElementById("Counter");
     CounterElem.innerText = ++num;
 }
-function Subtract() {
+function Subtract1() {
     const CounterElem = document.getElementById("Counter");
     CounterElem.innerText = --num;
 }
@@ -14,49 +14,55 @@ function Reset() {
 }
 
 
-//Test area
-
-
-//end of test area
-
-//fix code below
 function fizzball() {
     let fbInputElem = document.getElementById("fb-input").value;
     console.log(document.getElementById("fb-input").value);
     let fbOutput = document.getElementById("fb-output");
-    if (fbInputElem % 3 == 0 ) {
-    fbOutput.innerText = "Fizz";
+    if (fbInputElem % 15 == 0 ) {
+    fbOutput.innerText = "Fizzbuzz";
     }
-    if (fbInputElem % 5 == 0) {
+    else if (fbInputElem % 5 == 0) {
         fbOutput.innerText = "Buzz";
     }
-    if (fbInputElem % 15 == 0) {
-        fbOutput.innerText = "Fizzbuzz";
+    else if (fbInputElem % 3 == 0) {
+        fbOutput.innerText = "Fizz";
     }
     else if (fbInputElem % 3 != 0 && fbInputElem % 5 != 0 && fbInputElem % 15 != 0 )
         fbOutput.innerText = fbInputElem;
 
  }
+
+
  function Plus(input) {
     additsh()
     Operation(input)
  }function Subtrish(input) {
     Subtract()
     Operation(input)
+ }function Multiplex(input) {
+    Multi()
+    Operation(input)
+ }function Divish(input) {
+    Divi()
+    Operation(input)
  }
  function Operation(input) {
-        Variable = input;
+       globalThis.Variable = input;
         document.getElementById("cal-output").innerHTML = 
         document.getElementById("cal-output").innerHTML + input;
-        
  }
  
  function additsh() {
     globalThis.x = 0; 
-}
- 
+} 
 function Subtract() {
     globalThis.x = 1;
+}
+function Multi() {
+    globalThis.x = 2;
+}
+function Divi() {
+    globalThis.x = 3;
 }
  function calculator () {
     
@@ -65,15 +71,28 @@ function Subtract() {
         parseInt(document.getElementById("cal-output").innerHTML)
         + parseInt(Variable);
     }
-    else if (document.querySelector(".spc"))
+    else if (x == 1)
         document.getElementById("cal-output").innerHTML = 
         parseInt(document.getElementById("cal-output").innerHTML)
         - parseInt(Variable);
+    else if (x == 2)
+        document.getElementById("cal-output").innerHTML = 
+        parseInt(document.getElementById("cal-output").innerHTML)
+        * parseInt(Variable);
+    else if (x == 3)
+        document.getElementById("cal-output").innerHTML = 
+        parseInt(document.getElementById("cal-output").innerHTML)
+        / parseInt(Variable);
+ }
+ function DEL() {
+    console.log("test test");
+    document.getElementById("cal-output").length == 0;
  }
  function reset() {
     document.getElementById("cal-output").innerHTML = "";
  }
- 
+ // ^ DEL not working and doesn't read numbers larger than 10, Look into ^
+
 const imgTag = document.createElement('img')
 function testfetch() {
 
@@ -96,5 +115,9 @@ function awayWithTheCat() {
     
 
 
+//Test area
+
+
+//end of test area
 
 // https://random-word-api.herokuapp.com/home
