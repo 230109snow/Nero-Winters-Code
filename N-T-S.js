@@ -37,17 +37,30 @@ function fizzball() {
         fbOutput.innerText = fbInputElem;
 
  }
-  let firstNum = 0;
-  let secondNum = 1;
+ function Plus(input) {
+    additsh()
+    Operation(input)
+ }function Subtrish(input) {
+    Subtract()
+    Operation(input)
+ }
  function Operation(input) {
         Variable = input;
         document.getElementById("cal-output").innerHTML = 
         document.getElementById("cal-output").innerHTML + input;
         
  }
- //Try giving + and - a seperate function perhaps?
+ 
+ function additsh() {
+    globalThis.x = 0; 
+}
+ 
+function Subtract() {
+    globalThis.x = 1;
+}
  function calculator () {
-    if (document.querySelector(".cpc")) {
+    
+    if (x == 0) {
         document.getElementById("cal-output").innerHTML = 
         parseInt(document.getElementById("cal-output").innerHTML)
         + parseInt(Variable);
@@ -57,9 +70,10 @@ function fizzball() {
         parseInt(document.getElementById("cal-output").innerHTML)
         - parseInt(Variable);
  }
- function clear(input) {
+ function reset() {
     document.getElementById("cal-output").innerHTML = "";
  }
+ 
 const imgTag = document.createElement('img')
 function testfetch() {
 
